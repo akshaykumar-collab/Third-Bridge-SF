@@ -1,0 +1,26 @@
+.dummy{
+	color : black;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.error {
+	color: DarkRed;
+}
+
+.normal {
+	color: black;
+}
+
+td.label {
+	padding-right: 5px;
+	text-align: right;
+	width: 45%;
+}
+
+td.icon {
+	text-align: right;
+	vertical-align: middle;
+}

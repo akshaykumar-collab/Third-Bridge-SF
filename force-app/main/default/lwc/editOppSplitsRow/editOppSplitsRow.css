@@ -1,0 +1,15 @@
+.dummy{
+	color : black;
+}
+:host {
+  	display: table-row;
+}
+.errorGlow {
+	border: 2px solid red;
+    border-radius: 7px;
+	outline: none;
+    box-shadow: 0 0 10px red;
+}
+.normal {
+	color: black;
+}

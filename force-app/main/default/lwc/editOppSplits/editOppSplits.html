@@ -1,0 +1,146 @@
+<template>
+    <lightning-card title="Edit Opportunity Splits">
+        <!-- HEADER -->
+        <!--<lightning-button label="New" slot="actions"></lightning-button>-->
+
+        <!-- BODY -->
+        <template if:true={opp}>
+            <template if:true={loading}>
+                <div class="exampleHolder">
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </div>
+            </template>
+            
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Team Member">
+                                Team Member<br>
+                                Target Totals:
+                            </div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Percent %">
+                                Percent % <br>
+                                &nbsp;
+                            </div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Amount">
+                                Amount ({opp.CurrencyIsoCode})<br>
+                                <lightning-formatted-number value={opp.Amount} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number>
+                            </div>
+                        </th>
+                        <template if:true={showMRR}>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="MRR Split">
+                                    MRR Split<br>
+                                    <lightning-formatted-number value={opp.Forum_MRR_2__c} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number>
+                                </div>
+                            </th>
+                        </template>
+                        <template if:true={showTAS}>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="TAS Split">
+                                    TAS Split<br>
+                                    {tas}
+                                </div>
+                            </th>
+                        </template>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Delete"></div>
+                        </th>
+                    </tr>
+                </thead>
+                <template if:true={renderSplits}>
+                    <tbody>
+                        <template for:each={splits} for:item="split" for:index="index">
+                            <c-edit-opp-splits-row 
+                                key={split.Id}
+                                teammemberoptions={teamMemberOptions}
+                                splitteammember={split.SplitOwnerId}
+                                percent={split.SplitPercentage}
+                                amount={split.SplitAmount}
+                                mrrsplit={split.MRR_Split__c}
+                                tassplit={split.TAS_Split__c}
+                                id={split.Id}
+                                index={index}
+
+                                oppamount={opp.Amount}
+                                mrrtotal={opp.Forum_MRR_2__c}
+                                tastotal={tas}
+                                recordtype={opp.RecordType.Name}
+                                type={opp.Type}
+                                showmrr={showMRR}
+                                showtas={showTAS}
+
+                                ondelete={deleteSplit}
+                                onupdate={updateSplitTotals}
+                            >
+                            </c-edit-opp-splits-row>
+                        </template>
+                    </tbody>
+                </template>
+                
+            </table>
+            
+        </template>
+
+        <!-- FOOTER -->
+        <div slot="footer" class="slds-p-bottom_small slds-grid slds-gutters">
+            <div class="slds-col">
+                <lightning-button variant="neutral" label="Add Row" title="Add Row" onclick={addRow} class="slds-float_left"></lightning-button>
+            </div>
+
+            <div class="slds-col">
+                <lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={discardChanges} class="slds-p-right_xx-small"></lightning-button>
+                <lightning-button variant="brand" label="Save" title="Save" onclick={saveChanges} class="slds-p-left_xx-small" disabled={disableSave}></lightning-button>
+            </div>
+
+            <template if:true={opp}>
+                <div class="slds-col bold">
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <template if:true={showPercentError}>
+                                    <lightning-helptext icon-name="utility:warning" icon-variant="error" content="Total Percentage must add up to 100%"></lightning-helptext>
+                                </template>
+                            </td>
+                            <td class="label">TOTAL PERCENTAGE:</td>
+                            <td><lightning-formatted-number value={totalPercent} format-style="percent-fixed" maximum-fraction-digits="2"></lightning-formatted-number></td>
+                        </tr>
+                        <tr>
+                            <td class="icon"></td>
+                            <td class="label">TOTAL AMOUNT:</td>
+                            <td><lightning-formatted-number value={totalAmount} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number></td>
+                        </tr>
+                        <template if:true={showMRR}>
+                            <tr>
+                                <td class="icon">
+                                    <template if:true={showMRRError}>
+                                        <lightning-helptext icon-name="utility:warning" icon-variant="error" content={mrrErrorMessage}></lightning-helptext>
+                                    </template>
+                                </td>
+                                <td class="label">TOTAL MRR:</td>
+                                <td><lightning-formatted-number value={totalMRR} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number></td>
+                            </tr>
+                        </template>
+                        <template if:true={showTAS}>
+                            <tr>
+                                <td class="icon">
+                                    <template if:true={showTASError}>
+                                        <lightning-helptext icon-name="utility:warning" icon-variant="error" content={tasErrorMessage}></lightning-helptext>
+                                    </template>
+                                </td>
+                                <td class="label">TOTAL TAS:</td>
+                                <td>{totalTAS}</td>
+                            </tr>
+                        </template>
+                    </table>    
+                </div>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

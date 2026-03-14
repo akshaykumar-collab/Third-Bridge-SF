@@ -1,0 +1,33 @@
+<template>
+    <td data-label="Team Member">
+        <lightning-combobox
+            date-name="team members"
+            label="Team Members"
+            variant="label-hidden"
+            value={splitteammember}
+            options={teammemberoptions}
+            onchange={handleTeamMemberSelect}
+            class={teamMemberClass}></lightning-combobox>
+    </td>
+    <td data-label="Percent">
+        <lightning-input type="number" class="percent" date-name="percent" formatter="percent-fixed" step="0.01" variant="label-hidden" max="100" min="0" value={percent} onchange={handlePercentChange}></lightning-input>
+    </td>
+    <td data-label="Amount">
+        <lightning-input type="number" class="amount" date-name="amount" formatter="currency" step="0.01" variant="label-hidden" value={amount} onchange={handleAmountChange}></lightning-input> 
+    </td>
+    <template if:true={showmrr}>
+        <td data-label="MRR Split">
+            <lightning-input type="number" class="mrr" date-name="mrrsplit" formatter="currency" step="0.01" variant="label-hidden" value={mrrsplit} onchange={handleMRRChange}></lightning-input> 
+        </td>
+    </template>
+    <template if:true={showtas}>
+        <td data-label="TAS Split">
+            <lightning-input type="number" class="tas" date-name="tassplit" variant="label-hidden" value={tassplit} onchange={handleTASChange}></lightning-input>
+        </td>
+    </template>
+    <td data-label="Delete">
+        <template if:true={showDelete}>
+            <lightning-button-icon icon-name="utility:delete" alternative-text="Delete" title="Delete" onclick={deleteSplit}></lightning-button-icon>
+        </template>
+    </td>
+</template>
