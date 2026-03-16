@@ -1,0 +1,5 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+    <div class="slds-p-bottom_large">  
+        <lightning:button class="okBtn" label="Ok" title="Ok" onclick="{! c.handleConfirm }"/>
+    </div>
+</aura:component>

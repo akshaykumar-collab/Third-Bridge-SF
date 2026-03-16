@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-10-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" 
+                controller="CreateQuoteApexController">
+    <aura:attribute name="quoteRecord" type="Object"/>
+    <!--aura:attribute name="quoteRecord" type="Quote" default="{'sobjectType' : 'Quote'}"/-->
+    <aura:attribute name="recordLoadError" type="String"/>
+    
+    <force:recordData aura:id="quoteLoader"
+                      recordId="{!v.recordId}"
+                      fields="Name,RecordTypeId,RecordType.Name,RecordType.DeveloperName,AccountId,Type,Approved__c,Hours__c,Pricebook2Id,Territory__c,TB_ID__c,Deal_Include_CGC__c,Type,Trial_Type__c,Trial_Product__c,Is_Account_Address_Populated__c"
+                      targetFields="{!v.quoteRecord}"
+                      targetError="{!v.recordLoadError}"
+                      recordUpdated="{!c.handleRecordUpdate}" 
+                      />
+</aura:component>

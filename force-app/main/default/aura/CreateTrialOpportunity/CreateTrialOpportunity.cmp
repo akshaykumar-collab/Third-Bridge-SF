@@ -1,0 +1,13 @@
+<aura:component implements="force:lightningQuickAction,flexipage:availableForRecordHome,force:hasRecordId" >
+    <aura:attribute name="oppRecord" type="Object"/>
+    <aura:attribute name="recordLoadError" type="String"/>
+    
+    <force:recordData aura:id="oppLoader"
+                      recordId="{!v.recordId}"
+                      fields="Name,Type"
+                      targetFields="{!v.oppRecord}"
+                      targetError="{!v.oppLoadError}"
+                      recordUpdated="{!c.recordUpdate}" 
+                      />
+    <lightning:flow aura:id="newTrialFlow" onstatuschange="{!c.handleStatusChange}"/>    
+</aura:component>
