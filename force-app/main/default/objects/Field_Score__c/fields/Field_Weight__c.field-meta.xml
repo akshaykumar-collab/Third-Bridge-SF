@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Weight__c</fullName>
+    <description>The master for the Field Score, if there is no related weight the model will be incomplete</description>
+    <label>Field Weight</label>
+    <referenceTo>Field_Weight__c</referenceTo>
+    <relationshipLabel>Field Scores</relationshipLabel>
+    <relationshipName>Field_Scores</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

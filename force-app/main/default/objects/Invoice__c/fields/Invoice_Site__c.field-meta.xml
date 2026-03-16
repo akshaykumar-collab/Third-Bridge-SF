@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Site__c</fullName>
+    <label>Invoice Site</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SHANGHAI</fullName>
+                <default>false</default>
+                <label>SHANGHAI</label>
+            </value>
+            <value>
+                <fullName>LONDON</fullName>
+                <default>false</default>
+                <label>LONDON</label>
+            </value>
+            <value>
+                <fullName>DELHI</fullName>
+                <default>false</default>
+                <label>DELHI</label>
+            </value>
+            <value>
+                <fullName>NEWYORK</fullName>
+                <default>false</default>
+                <label>NEWYORK</label>
+            </value>
+            <value>
+                <fullName>CALIFORNIA</fullName>
+                <default>false</default>
+                <label>CALIFORNIA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

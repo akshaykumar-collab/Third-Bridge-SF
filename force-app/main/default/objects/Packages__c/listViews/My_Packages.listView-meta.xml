@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Packages</fullName>
+    <columns>Expiring__c</columns>
+    <columns>Flag_Indicator__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Initial_Hours__c</columns>
+    <columns>Hours_Remaining__c</columns>
+    <columns>Exp_Run_Rate__c</columns>
+    <columns>Monthly_run_rate_last_60_days__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>Anticipated_end_of_package__c</columns>
+    <columns>Price_Per_Hour__c</columns>
+    <columns>TAS_Total__c</columns>
+    <columns>First_Signed__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Packages</label>
+    <language>en_US</language>
+</ListView>

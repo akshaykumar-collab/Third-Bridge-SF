@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q3_2020_Budgets</fullName>
+    <columns>NAME</columns>
+    <columns>FM_MRR_Budget__c</columns>
+    <columns>Amount__c</columns>
+    <columns>TAS_Budget__c</columns>
+    <columns>TAS_Quota__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Fiscal_Quarter__c</field>
+        <operation>equals</operation>
+        <value>Q3</value>
+    </filters>
+    <filters>
+        <field>Year__c</field>
+        <operation>equals</operation>
+        <value>2020</value>
+    </filters>
+    <label>Q3 2020 Budgets</label>
+</ListView>

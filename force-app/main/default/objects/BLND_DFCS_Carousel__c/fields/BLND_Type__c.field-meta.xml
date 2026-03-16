@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Presentation</fullName>
+                <default>true</default>
+                <label>Presentation</label>
+            </value>
+            <value>
+                <fullName>Notebook</fullName>
+                <default>false</default>
+                <label>Notebook</label>
+            </value>
+            <value>
+                <fullName>Address Book</fullName>
+                <default>false</default>
+                <label>Address Book</label>
+            </value>
+            <value>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+                <label>Dashboard</label>
+            </value>
+            <value>
+                <fullName>To Do List</fullName>
+                <default>false</default>
+                <label>To Do List</label>
+            </value>
+            <value>
+                <fullName>Report</fullName>
+                <default>false</default>
+                <label>Report</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Discount__c</fullName>
+    <formula>IF(AND(  Monthly_run_rate_last_60_days__c   &gt;= 0.0, Monthly_run_rate_last_60_days__c  &lt;= 2.99), 0, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 3.0, Monthly_run_rate_last_60_days__c  &lt;= 3.99), 0.005, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 4.0, Monthly_run_rate_last_60_days__c  &lt;= 4.99), 0.01, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 5.0, Monthly_run_rate_last_60_days__c  &lt;= 5.99), 0.015, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 6.0, Monthly_run_rate_last_60_days__c  &lt;= 6.99), 0.02, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 7.0, Monthly_run_rate_last_60_days__c  &lt;= 7.99), 0.025, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 8.0, Monthly_run_rate_last_60_days__c  &lt;= 8.99), 0.03, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 9.0, Monthly_run_rate_last_60_days__c  &lt;= 9.99), 0.035, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 10.0, Monthly_run_rate_last_60_days__c  &lt;= 11.99), 0.04, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 12.0, Monthly_run_rate_last_60_days__c &lt;= 13.99), 0.05, 
+IF(AND(Monthly_run_rate_last_60_days__c  &gt;= 14.0, Monthly_run_rate_last_60_days__c &lt;= 15.99), 0.06, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 16.0, Monthly_run_rate_last_60_days__c  &lt;= 17.99), 0.07, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 18.0, Monthly_run_rate_last_60_days__c  &lt;= 19.99), 0.08, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 20.0, Monthly_run_rate_last_60_days__c  &lt;= 21.99), 0.09, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 22.0, Monthly_run_rate_last_60_days__c  &lt;= 23.99), 0.10, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 24.0, Monthly_run_rate_last_60_days__c  &lt;= 25.99), 0.11, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 26.0, Monthly_run_rate_last_60_days__c  &lt;= 27.99), 0.12, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 28.0, Monthly_run_rate_last_60_days__c  &lt;= 29.99), 0.13, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 30.0, Monthly_run_rate_last_60_days__c  &lt;= 31.99), 0.14, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 32.0, Monthly_run_rate_last_60_days__c  &lt;= 33.99), 0.15, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 34.0, Monthly_run_rate_last_60_days__c  &lt;= 35.99), 0.16, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 36.0, Monthly_run_rate_last_60_days__c  &lt;= 37.99), 0.17, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 38.0, Monthly_run_rate_last_60_days__c  &lt;= 39.99), 0.18, 
+IF(AND(Monthly_run_rate_last_60_days__c &gt;= 40.0, Monthly_run_rate_last_60_days__c  &lt;= 41.99), 0.19, 
+
+0.20))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Max Discount (current run rate)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

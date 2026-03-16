@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_Price__c</fullName>
+    <formula>Case(   Opportunity__r.Type   ,
+&quot;Forum New-New&quot;, 0,
+&quot;Forum New Renewal&quot;, 0,
+&quot;Forum Renewal&quot;, 0,
+
+
+Case (  CurrencyIsoCode  , 
+&quot;USD&quot;, IF( Asia__c   &lt;&gt;&quot;Asia&quot;, 1300, 900), 
+&quot;EUR&quot;, 1050, 
+&quot;GBP&quot;, 850, 
+&quot;CNY&quot;, 5000, 0)
+)</formula>
+    <label>List Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

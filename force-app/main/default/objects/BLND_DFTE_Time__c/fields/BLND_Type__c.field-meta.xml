@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Task Type</fullName>
+                <default>true</default>
+                <label>No Task Type</label>
+            </value>
+            <value>
+                <fullName>Project Task</fullName>
+                <default>false</default>
+                <label>Project Task</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Training &amp; Education</fullName>
+                <default>false</default>
+                <label>Training &amp; Education</label>
+            </value>
+            <value>
+                <fullName>Practice Development</fullName>
+                <default>false</default>
+                <label>Practice Development</label>
+            </value>
+            <value>
+                <fullName>Internal Meeting</fullName>
+                <default>false</default>
+                <label>Internal Meeting</label>
+            </value>
+            <value>
+                <fullName>Performance Management</fullName>
+                <default>false</default>
+                <label>Performance Management</label>
+            </value>
+            <value>
+                <fullName>Enterprise Account Support</fullName>
+                <default>false</default>
+                <label>Enterprise Account Support</label>
+            </value>
+            <value>
+                <fullName>General Administration</fullName>
+                <default>false</default>
+                <label>General Administration</label>
+            </value>
+            <value>
+                <fullName>Paid Time Off</fullName>
+                <default>false</default>
+                <label>Paid Time Off</label>
+            </value>
+            <value>
+                <fullName>Recruiting and Interviewing</fullName>
+                <default>false</default>
+                <label>Recruiting and Interviewing</label>
+            </value>
+            <value>
+                <fullName>Instructing</fullName>
+                <default>false</default>
+                <label>Instructing</label>
+            </value>
+            <value>
+                <fullName>Tom work</fullName>
+                <default>false</default>
+                <label>Tom work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

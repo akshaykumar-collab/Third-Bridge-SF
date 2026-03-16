@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Opportunity_Name__r.Product__c ,
+
+&quot;Forum&quot;,  Opportunity_Name__r.Forum_Duration_number__c ,
+&quot;Intelligence&quot;,   Opportunity_Name__r.Intelligence_Duration_Number__c  ,
+ Opportunity_Name__r.Package_Duration__c 
+
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Duration</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

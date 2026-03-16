@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Office_Intranet__c</fullName>
+    <label>Intranet Client Office</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Company_Intranet__c</field>
+            <operation>equals</operation>
+            <valueField>Client_Office_Intranet__c.Company_Intranet__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Client_Office_Intranet__c</referenceTo>
+    <relationshipLabel>Intranet Entities</relationshipLabel>
+    <relationshipName>Company_Client_Offices</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

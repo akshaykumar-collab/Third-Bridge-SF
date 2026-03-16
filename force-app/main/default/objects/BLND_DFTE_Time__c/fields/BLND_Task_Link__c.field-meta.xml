@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Task_Link__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Task Link</label>
+    <referenceTo>BLND_DFDT_Task__c</referenceTo>
+    <relationshipLabel>DreamTeam Times</relationshipLabel>
+    <relationshipName>R00N30000002PYigEAG</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

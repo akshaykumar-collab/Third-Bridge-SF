@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Carousel__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Carousel</label>
+    <referenceTo>BLND_DFCS_Carousel__c</referenceTo>
+    <relationshipLabel>Slides</relationshipLabel>
+    <relationshipName>Slides</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Skill_Certification__c</fullName>
+    <label>Skill Certification</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cisco Certified Internetwork Expert</fullName>
+                <default>false</default>
+                <label>Cisco Certified Internetwork Expert</label>
+            </value>
+            <value>
+                <fullName>Certified Lotus Professional</fullName>
+                <default>false</default>
+                <label>Certified Lotus Professional</label>
+            </value>
+            <value>
+                <fullName>Certified Lotus Specialist</fullName>
+                <default>false</default>
+                <label>Certified Lotus Specialist</label>
+            </value>
+            <value>
+                <fullName>Certified Novell Administrator</fullName>
+                <default>false</default>
+                <label>Certified Novell Administrator</label>
+            </value>
+            <value>
+                <fullName>Certified Novell Engineer</fullName>
+                <default>false</default>
+                <label>Certified Novell Engineer</label>
+            </value>
+            <value>
+                <fullName>Certified Solaris Administrator</fullName>
+                <default>false</default>
+                <label>Certified Solaris Administrator</label>
+            </value>
+            <value>
+                <fullName>Microsoft Certified Database Administrator</fullName>
+                <default>false</default>
+                <label>Microsoft Certified Database Administrator</label>
+            </value>
+            <value>
+                <fullName>Microsoft Certified Professional</fullName>
+                <default>false</default>
+                <label>Microsoft Certified Professional</label>
+            </value>
+            <value>
+                <fullName>Microsoft Certified Solutions Developer</fullName>
+                <default>false</default>
+                <label>Microsoft Certified Solutions Developer</label>
+            </value>
+            <value>
+                <fullName>Microsoft Certified Systems Engineer</fullName>
+                <default>false</default>
+                <label>Microsoft Certified Systems Engineer</label>
+            </value>
+            <value>
+                <fullName>Novell Certified Internet Professional</fullName>
+                <default>false</default>
+                <label>Novell Certified Internet Professional</label>
+            </value>
+            <value>
+                <fullName>Oracle Certified Professional</fullName>
+                <default>false</default>
+                <label>Oracle Certified Professional</label>
+            </value>
+            <value>
+                <fullName>Project Management Professional</fullName>
+                <default>false</default>
+                <label>Project Management Professional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

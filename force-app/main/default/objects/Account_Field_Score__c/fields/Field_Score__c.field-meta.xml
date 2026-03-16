@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Score__c</fullName>
+    <description>The Field Score and Account are both master of the Account Field Score juntion object</description>
+    <inlineHelpText>Please select the Score for the corresponding field value</inlineHelpText>
+    <label>Field Score</label>
+    <referenceTo>Field_Score__c</referenceTo>
+    <relationshipLabel>Account Field Scores</relationshipLabel>
+    <relationshipName>Account_Field_Scores</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

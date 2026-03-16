@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upper_Range__c</fullName>
+    <description>Allows for a Ranger of number to be set on a field score, this field is the upper the ranger. The field value needs to be blank for the range fields to be used and vice versa</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please set the upper range for the acceptable field values</inlineHelpText>
+    <label>Upper Range</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connections NN</fullName>
+                <default>false</default>
+                <label>Connections NN</label>
+            </value>
+            <value>
+                <fullName>Connections NR</fullName>
+                <default>false</default>
+                <label>Connections NR</label>
+            </value>
+            <value>
+                <fullName>Connections Renewal</fullName>
+                <default>false</default>
+                <label>Connections Renewal</label>
+            </value>
+            <value>
+                <fullName>Forum New</fullName>
+                <default>false</default>
+                <label>Forum New</label>
+            </value>
+            <value>
+                <fullName>Forum Renewal</fullName>
+                <default>false</default>
+                <label>Forum Renewal</label>
+            </value>
+            <value>
+                <fullName>Intelligence New</fullName>
+                <default>false</default>
+                <label>Intelligence New</label>
+            </value>
+            <value>
+                <fullName>Intelligence Renewal</fullName>
+                <default>false</default>
+                <label>Intelligence Renewal</label>
+            </value>
+            <value>
+                <fullName>PAYG Consulting</fullName>
+                <default>false</default>
+                <label>PAYG Consulting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

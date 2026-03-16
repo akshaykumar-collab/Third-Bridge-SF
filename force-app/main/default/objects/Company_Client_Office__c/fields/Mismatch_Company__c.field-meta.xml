@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mismatch_Company__c</fullName>
+    <formula>Company_Intranet__c !=  Client_Office_Intranet__r.Company_Intranet__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mismatch Company</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

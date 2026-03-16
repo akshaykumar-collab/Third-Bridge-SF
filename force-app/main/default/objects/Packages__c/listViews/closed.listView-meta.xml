@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>closed</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Closed__c</columns>
+    <columns>Notes__c</columns>
+    <columns>Status__c</columns>
+    <columns>Hours_Remaining__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Date_Updated__c</field>
+        <operation>lessThan</operation>
+        <value>THIS_WEEK</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>contains</operation>
+        <value>connections</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>contains</operation>
+        <value>forum</value>
+    </filters>
+    <label>closed</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Sales_Support</role>
+    </sharedTo>
+</ListView>

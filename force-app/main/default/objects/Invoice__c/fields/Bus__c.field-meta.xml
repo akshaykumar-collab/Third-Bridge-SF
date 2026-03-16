@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bus__c</fullName>
+    <label>Business Unit</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CONNECTIONS</fullName>
+                <default>false</default>
+                <label>CONNECTIONS</label>
+            </value>
+            <value>
+                <fullName>FORUM</fullName>
+                <default>false</default>
+                <label>FORUM</label>
+            </value>
+            <value>
+                <fullName>INTELLIGENCE</fullName>
+                <default>false</default>
+                <label>INTELLIGENCE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

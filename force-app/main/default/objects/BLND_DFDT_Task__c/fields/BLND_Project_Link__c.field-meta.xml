@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Project_Link__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Project Link</label>
+    <referenceTo>BLND_DFDT_Project__c</referenceTo>
+    <relationshipName>R00N30000002PYhyEAG</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

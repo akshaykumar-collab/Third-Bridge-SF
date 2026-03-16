@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Intranet__c</fullName>
+    <label>Company Name</label>
+    <referenceTo>Company_Intranet__c</referenceTo>
+    <relationshipLabel>Intranet Client Offices</relationshipLabel>
+    <relationshipName>Client_Offices_Intranet</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

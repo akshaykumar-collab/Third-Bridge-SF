@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>The score for the field score record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please set the score for the field score, defaults to 0</inlineHelpText>
+    <label>Score</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

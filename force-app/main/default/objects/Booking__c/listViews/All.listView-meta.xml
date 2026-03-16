@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Recognition_Region__c</columns>
+    <columns>Oppty_Stage__c</columns>
+    <columns>Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Oppty_Currency__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>Split__c</columns>
+    <columns>Oppty__c</columns>
+    <columns>Hours__c</columns>
+    <columns>Region_hrs__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

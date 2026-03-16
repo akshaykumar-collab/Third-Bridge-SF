@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public_Equity_Weight__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>The weight for a Public Equity asset class, controls how much weight is applied to the child field scores when the asset class is Public Equity Weight</description>
+    <label>Public Equity Weight</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

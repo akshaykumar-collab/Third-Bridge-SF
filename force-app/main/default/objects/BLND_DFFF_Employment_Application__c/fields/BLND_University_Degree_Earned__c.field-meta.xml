@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_University_Degree_Earned__c</fullName>
+    <label>University Degree Earned</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bachelor of Arts</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science</fullName>
+                <default>false</default>
+                <label>Bachelor of Science</label>
+            </value>
+            <value>
+                <fullName>Doctorate</fullName>
+                <default>false</default>
+                <label>Doctorate</label>
+            </value>
+            <value>
+                <fullName>Master of Arts</fullName>
+                <default>false</default>
+                <label>Master of Arts</label>
+            </value>
+            <value>
+                <fullName>Master of Science</fullName>
+                <default>false</default>
+                <label>Master of Science</label>
+            </value>
+            <value>
+                <fullName>Post Baccalaureate</fullName>
+                <default>false</default>
+                <label>Post Baccalaureate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Skill_Set__c</fullName>
+    <label>Skill Set</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Auditor</fullName>
+                <default>false</default>
+                <label>Auditor</label>
+            </value>
+            <value>
+                <fullName>Business Analyst</fullName>
+                <default>false</default>
+                <label>Business Analyst</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Customer Relations</fullName>
+                <default>false</default>
+                <label>Customer Relations</label>
+            </value>
+            <value>
+                <fullName>Database Administrator</fullName>
+                <default>false</default>
+                <label>Database Administrator</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Lead Developer</fullName>
+                <default>false</default>
+                <label>Lead Developer</label>
+            </value>
+            <value>
+                <fullName>Engineer</fullName>
+                <default>false</default>
+                <label>Engineer</label>
+            </value>
+            <value>
+                <fullName>Lead Engineer</fullName>
+                <default>false</default>
+                <label>Lead Engineer</label>
+            </value>
+            <value>
+                <fullName>Network Administrator</fullName>
+                <default>false</default>
+                <label>Network Administrator</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Consultant</fullName>
+                <default>false</default>
+                <label>Senior Consultant</label>
+            </value>
+            <value>
+                <fullName>Senior Database Administrator</fullName>
+                <default>false</default>
+                <label>Senior Database Administrator</label>
+            </value>
+            <value>
+                <fullName>Senior Developer</fullName>
+                <default>false</default>
+                <label>Senior Developer</label>
+            </value>
+            <value>
+                <fullName>Task Manager</fullName>
+                <default>false</default>
+                <label>Task Manager</label>
+            </value>
+            <value>
+                <fullName>Technical Architect</fullName>
+                <default>false</default>
+                <label>Technical Architect</label>
+            </value>
+            <value>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+                <label>Technical Lead</label>
+            </value>
+            <value>
+                <fullName>Web Master</fullName>
+                <default>false</default>
+                <label>Web Master</label>
+            </value>
+            <value>
+                <fullName>Technical Writer</fullName>
+                <default>false</default>
+                <label>Technical Writer</label>
+            </value>
+            <value>
+                <fullName>QA Engineer</fullName>
+                <default>false</default>
+                <label>QA Engineer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Weight__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>The field weight for the Credit asset class. Determine how much weight is applied to a field when the asset class is Credit</description>
+    <label>Credit Weight</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

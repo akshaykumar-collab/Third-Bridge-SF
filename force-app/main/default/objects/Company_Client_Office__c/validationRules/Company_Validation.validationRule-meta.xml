@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+AND(NOT(ISBLANK(Opportunity__r.Company_Intranet__c)),  Company_Intranet__r.Name != Opportunity__r.Company_Intranet__c),
+ISPICKVAL(Opportunity__r.Type, &quot;Trial&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Company_Intranet__c</errorDisplayField>
+    <errorMessage>Please select the same Company for Client Offices</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Forum_MRR_US_Snapshots</fullName>
+    <columns>NAME</columns>
+    <columns>Region__c</columns>
+    <columns>Fiscal_Period__c</columns>
+    <columns>Execution_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Forum MRR Forecasts</value>
+    </filters>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>US</value>
+    </filters>
+    <label>Forum MRR US Snapshots</label>
+</ListView>

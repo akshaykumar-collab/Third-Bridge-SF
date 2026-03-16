@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLND_Lastopen__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Lastopen</label>
+    <referenceTo>BLND_DFFF_Page__c</referenceTo>
+    <relationshipLabel>Forms</relationshipLabel>
+    <relationshipName>Forms</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
