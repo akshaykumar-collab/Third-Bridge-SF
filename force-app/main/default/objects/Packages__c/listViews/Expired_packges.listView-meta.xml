@@ -31,5 +31,5 @@
         <value>0</value>
     </filters>
     <label>Expired Packages with Hours Remaining</label>
-    <language>en_US</language>
+    
 </ListView>

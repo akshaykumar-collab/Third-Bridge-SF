@@ -23,7 +23,7 @@
         <value>THIS_YEAR</value>
     </filters>
     <label>Packages with No Oppty</label>
-    <language>en_US</language>
+    
     <sharedTo>
         <role>Sales_Support</role>
     </sharedTo>

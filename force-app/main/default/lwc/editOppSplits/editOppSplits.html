@@ -53,8 +53,8 @@
                         </th>
                     </tr>
                 </thead>
-                <template if:true={renderSplits}>
-                    <tbody>
+                <tbody>
+                    <template if:true={renderSplits}>
                         <template for:each={splits} for:item="split" for:index="index">
                             <c-edit-opp-splits-row 
                                 key={split.Id}
@@ -80,8 +80,8 @@
                             >
                             </c-edit-opp-splits-row>
                         </template>
-                    </tbody>
-                </template>
+                    </template>
+                </tbody>
                 
             </table>
             
