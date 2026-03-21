@@ -53,36 +53,35 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody>
-                    <template if:true={renderSplits}>
+                <template if:true={renderSplits}>
+                    <tbody>
                         <template for:each={splits} for:item="split" for:index="index">
-                            <c-edit-opp-splits-row 
-                                key={split.Id}
-                                teammemberoptions={teamMemberOptions}
-                                splitteammember={split.SplitOwnerId}
-                                percent={split.SplitPercentage}
-                                amount={split.SplitAmount}
-                                mrrsplit={split.MRR_Split__c}
-                                tassplit={split.TAS_Split__c}
-                                id={split.Id}
-                                index={index}
-
-                                oppamount={opp.Amount}
-                                mrrtotal={opp.Forum_MRR_2__c}
-                                tastotal={tas}
-                                recordtype={opp.RecordType.Name}
-                                type={opp.Type}
-                                showmrr={showMRR}
-                                showtas={showTAS}
-
-                                ondelete={deleteSplit}
-                                onupdate={updateSplitTotals}
-                            >
-                            </c-edit-opp-splits-row>
+                            <tr key={split.Id}>
+                                <td colspan="100%">
+                                    <c-edit-opp-splits-row 
+                                        teammemberoptions={teamMemberOptions}
+                                        splitteammember={split.SplitOwnerId}
+                                        percent={split.SplitPercentage}
+                                        amount={split.SplitAmount}
+                                        mrrsplit={split.MRR_Split__c}
+                                        tassplit={split.TAS_Split__c}
+                                        id={split.Id}
+                                        index={index}
+                                        oppamount={opp.Amount}
+                                        mrrtotal={opp.Forum_MRR_2__c}
+                                        tastotal={tas}
+                                        recordtype={opp.RecordType.Name}
+                                        type={opp.Type}
+                                        showmrr={showMRR}
+                                        showtas={showTAS}
+                                        ondelete={deleteSplit}
+                                        onupdate={updateSplitTotals}
+                                    ></c-edit-opp-splits-row>
+                                </td>
+                            </tr>
                         </template>
-                    </template>
-                </tbody>
-                
+                    </tbody>
+                </template>
             </table>
             
         </template>
@@ -101,42 +100,44 @@
             <template if:true={opp}>
                 <div class="slds-col bold">
                     <table>
-                        <tr>
-                            <td class="icon">
-                                <template if:true={showPercentError}>
-                                    <lightning-helptext icon-name="utility:warning" icon-variant="error" content="Total Percentage must add up to 100%"></lightning-helptext>
-                                </template>
-                            </td>
-                            <td class="label">TOTAL PERCENTAGE:</td>
-                            <td><lightning-formatted-number value={totalPercent} format-style="percent-fixed" maximum-fraction-digits="2"></lightning-formatted-number></td>
-                        </tr>
-                        <tr>
-                            <td class="icon"></td>
-                            <td class="label">TOTAL AMOUNT:</td>
-                            <td><lightning-formatted-number value={totalAmount} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number></td>
-                        </tr>
-                        <template if:true={showMRR}>
+                        <tbody>
                             <tr>
                                 <td class="icon">
-                                    <template if:true={showMRRError}>
-                                        <lightning-helptext icon-name="utility:warning" icon-variant="error" content={mrrErrorMessage}></lightning-helptext>
+                                    <template if:true={showPercentError}>
+                                        <lightning-helptext icon-name="utility:warning" icon-variant="error" content="Total Percentage must add up to 100%"></lightning-helptext>
                                     </template>
                                 </td>
-                                <td class="label">TOTAL MRR:</td>
-                                <td><lightning-formatted-number value={totalMRR} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number></td>
+                                <td class="label">TOTAL PERCENTAGE:</td>
+                                <td><lightning-formatted-number value={totalPercent} format-style="percent-fixed" maximum-fraction-digits="2"></lightning-formatted-number></td>
                             </tr>
-                        </template>
-                        <template if:true={showTAS}>
                             <tr>
-                                <td class="icon">
-                                    <template if:true={showTASError}>
-                                        <lightning-helptext icon-name="utility:warning" icon-variant="error" content={tasErrorMessage}></lightning-helptext>
-                                    </template>
-                                </td>
-                                <td class="label">TOTAL TAS:</td>
-                                <td>{totalTAS}</td>
+                                <td class="icon"></td>
+                                <td class="label">TOTAL AMOUNT:</td>
+                                <td><lightning-formatted-number value={totalAmount} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number></td>
                             </tr>
-                        </template>
+                            <template if:true={showMRR}>
+                                <tr>
+                                    <td class="icon">
+                                        <template if:true={showMRRError}>
+                                            <lightning-helptext icon-name="utility:warning" icon-variant="error" content={mrrErrorMessage}></lightning-helptext>
+                                        </template>
+                                    </td>
+                                    <td class="label">TOTAL MRR:</td>
+                                    <td><lightning-formatted-number value={totalMRR} format-style="currency" currency-code={opp.CurrencyIsoCode} currency-display-as="code"></lightning-formatted-number></td>
+                                </tr>
+                            </template>
+                            <template if:true={showTAS}>
+                                <tr>
+                                    <td class="icon">
+                                        <template if:true={showTASError}>
+                                            <lightning-helptext icon-name="utility:warning" icon-variant="error" content={tasErrorMessage}></lightning-helptext>
+                                        </template>
+                                    </td>
+                                    <td class="label">TOTAL TAS:</td>
+                                    <td>{totalTAS}</td>
+                                </tr>
+                            </template>
+                        </tbody>
                     </table>    
                 </div>
             </template>
