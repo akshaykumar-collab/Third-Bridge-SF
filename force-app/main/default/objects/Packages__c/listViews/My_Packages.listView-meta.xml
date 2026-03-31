@@ -17,5 +17,5 @@
     <columns>First_Signed__c</columns>
     <filterScope>Mine</filterScope>
     <label>My Packages</label>
-    
+    <language>en_US</language>
 </ListView>

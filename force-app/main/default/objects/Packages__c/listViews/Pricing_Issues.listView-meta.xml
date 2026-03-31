@@ -16,7 +16,7 @@
         <value>yellow</value>
     </filters>
     <label>Pricing Issues</label>
-    
+    <language>en_US</language>
     <sharedTo>
         <role>Global_Sales_Head</role>
     </sharedTo>

@@ -32,5 +32,5 @@
         <value>0</value>
     </filters>
     <label>Expired or Expiring Packages</label>
-    
+    <language>en_US</language>
 </ListView>
